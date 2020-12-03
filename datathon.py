@@ -15,9 +15,6 @@ st.title("Weekly Total Spending")
 st.sidebar.title("About")
 st.sidebar.markdown("The dashboard is a visualization of data from Price Intelligence database." )
 
-st.sidebar.markdown("For further information, please visit: dosm.gov.my")
-st.sidebar.text("Developed by: Anas, Usamah, Zahir")
-
 
 #Create the selection box
 selected_metrics = st.selectbox(
