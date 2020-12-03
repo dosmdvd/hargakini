@@ -6,7 +6,7 @@ import plotly as pt
 
 
 
-csv_file_total = ("data/master.csv")
+csv_file_total = ("master.csv")
 df= pd.read_csv(csv_file_total)
 
 st.title("Weekly Total Spending")
