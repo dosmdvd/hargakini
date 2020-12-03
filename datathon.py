@@ -1,26 +1,30 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import plotly as pt
+import plotly_express as px
+
+
 
 csv_file_total = ("data/master.csv")
 df= pd.read_csv(csv_file_total)
 
 st.title("Weekly Total Spending")
 
-#Sidebar 
+#Sidebar
 st.sidebar.title("About")
 st.sidebar.markdown("The dashboard is a visualization of data from Price Intelligence database." )
 
-st.sidebar.markdown("For further information, please visit: datathon.dosm.gov.my")
+st.sidebar.markdown("For further information, please visit: dosm.gov.my")
 st.sidebar.text("Developed by: Anas, Usamah, Zahir")
-st.sidebar.text("Group: Hargakini")
+
 
 #Create the selection box
 selected_metrics = st.selectbox(
     label="Pick your category", options=['Air Conditioner','Bedroom Furniture','Cooktops','Freezer','Home Furniture','Living Furniture','Laptops','Phones','Refrigerator','Smart Televisions'])
 st.write("You selected: ", selected_metrics)
 
-# Create traces
+# Plotting,Change it to lines mode or lines+markers where it fits
 fig = go.Figure()
 if selected_metrics == 'Air Conditioner':
 	fig.add_trace(go.Scatter(x=df.Date, y=df.air_con,
