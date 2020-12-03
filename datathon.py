@@ -19,7 +19,7 @@ st.sidebar.text("Developed by: Anas, Usamah, Zahir")
 
 #Create the selection box
 selected_metrics = st.selectbox(
-    label="Pick your category", options=['Air Conditioner','Bedroom Furniture','Cooktops','Freezer','Home Furniture','Living Furniture','Laptops','Phones','Refrigerator','Smart Televisions'])
+    label="Pick your category", options=['Air Conditioner','Bedroom Furniture','Cooktops','Freezer','Home Furniture','Living Room Furniture','Laptops','Phones','Refrigerator','Smart Televisions'])
 st.write("You selected: ", selected_metrics)
 
 # Plotting,Change it to lines mode or lines+markers where it fits
