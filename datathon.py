@@ -41,7 +41,7 @@ if selected_metrics == 'Freezer':
 if selected_metrics == 'Home Furniture':
 	fig.add_trace(go.Scatter(x=df.Date, y=df.home,
 	                    mode='markers', name='Home Furniture'))
-if selected_metrics == 'Living Furniture':
+if selected_metrics == 'Living Room Furniture':
 	fig.add_trace(go.Scatter(x=df.Date, y=df.living,
 	                    mode='markers', name='Living'))
 if selected_metrics == 'Laptops':
